@@ -28,7 +28,6 @@ function Euler_rho_update(rho, delta, omega, L, dt)
 end
 
 function run_simulation(rho0, delta, omega, L, dt, t_final, RK4)
-    println(RK4)
     num_steps = Int(t_final / dt)
     rho = rho0
     results = Vector{Matrix{ComplexF64}}(undef, num_steps+1)
